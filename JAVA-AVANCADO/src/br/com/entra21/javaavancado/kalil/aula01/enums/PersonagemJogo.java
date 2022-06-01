@@ -1,4 +1,4 @@
-package br.com.entra21.javaavancado.kalil.enums;
+package br.com.entra21.javaavancado.kalil.aula01.enums;
 
 public enum PersonagemJogo {
 

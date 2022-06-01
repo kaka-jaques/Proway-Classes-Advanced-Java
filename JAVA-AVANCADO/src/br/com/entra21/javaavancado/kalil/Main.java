@@ -2,7 +2,8 @@ package br.com.entra21.javaavancado.kalil;
 
 import java.util.Scanner;
 
-import br.com.entra21.javaavancado.kalil.enums.PersonagemJogo;
+import br.com.entra21.javaavancado.kalil.aula01.enums.PersonagemJogo;
+import br.com.entra21.javaavancado.kalil.aula02.colections.AprenderCollections;
 
 public class Main {
 
@@ -38,6 +39,11 @@ public class Main {
 				aprenderENUM();
 
 				break;
+			case 3:
+				
+				AprenderCollections.aprender();
+				
+				break;
 
 			default:
 				System.out.println("Opção Inválida!");
@@ -54,6 +60,7 @@ public class Main {
 		menu += "\n0 - Sair";
 		menu += "\n1- Wrapper";
 		menu += "\n2 - ENUM";
+		menu += "\n3 - Collections-List";
 		menu += "\nEscolha uma das Opções";
 
 		return menu;
