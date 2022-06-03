@@ -25,7 +25,6 @@ public class Main {
 			System.out.println(exibirMenu());
 			option = input.nextByte();
 
-			@Lembrete(value="")
 			switch (option) {
 			case 0:
 
