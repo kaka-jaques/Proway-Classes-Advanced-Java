@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 import br.com.entra21.javaavancado.kalil.aula01.enums.PersonagemJogo;
 import br.com.entra21.javaavancado.kalil.aula02.colections.AprenderCollections;
+import br.com.entra21.javaavancado.kalil.aula03.Aula03;
+import br.com.entra21.javaavancado.kalil.aula03.assuntos.Lembrete;
 
 public class Main {
 
@@ -23,6 +25,7 @@ public class Main {
 			System.out.println(exibirMenu());
 			option = input.nextByte();
 
+			@Lembrete(value="")
 			switch (option) {
 			case 0:
 
@@ -44,6 +47,11 @@ public class Main {
 				AprenderCollections.aprender();
 				
 				break;
+			case 4:
+				
+				Aula03.aprender();
+				
+				break;
 
 			default:
 				System.out.println("Opção Inválida!");
@@ -58,9 +66,10 @@ public class Main {
 
 		String menu = "Vamos aprender sobre conceitos avançados em JAVA!";
 		menu += "\n0 - Sair";
-		menu += "\n1- Wrapper";
+		menu += "\n1 - Wrapper";
 		menu += "\n2 - ENUM";
 		menu += "\n3 - Collections-List";
+		menu += "\n4 - Datas e Annotations";
 		menu += "\nEscolha uma das Opções";
 
 		return menu;
